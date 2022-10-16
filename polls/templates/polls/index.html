@@ -1,3 +1,7 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,12 +10,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>poll_app</title>
-    <link rel="stylesheet" href="mysite/polls/statics/polls/style.css">
-    
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
 </head>
 
 <body>
-    
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
     {% if latest_question_list %}
     <ul>
         {% for question in latest_question_list %}
